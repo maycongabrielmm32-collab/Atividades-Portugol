@@ -5,23 +5,18 @@ programa
 	funcao inicio()
 	{
 		real numeros[15], comparar[15] , somas[15]
-		inteiro i
+		inteiro i, comparar1=0, comparar2=15
 		para(i=0;i<15;i++){
 
 			faca{
 				escreva("Digite valores de 1 a 10: ")
 				leia(numeros[i])
-				comparar[i] = numeros[i]
-				
 				se(numeros[i]<1 ou numeros[i]>10){
 					escreva("\nNúmero Incorreto! ")
 				}
 			}enquanto(numeros[i]<1 ou numeros[i]>10)
-
-			para(i=14;i>-1;i--){
-				somas[i] = comparar[i]==numeros[i]
-				 
-			}
+			comparar1++
+			comparar2--
 		}
 
 	}
