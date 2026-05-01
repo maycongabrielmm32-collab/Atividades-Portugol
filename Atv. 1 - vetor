@@ -1,0 +1,18 @@
+//Faça um programa que peça ao usuário para digitar 10 números reais. Ao final
+//imprima cada valor na ordem inversa à leitura.
+programa
+{
+	
+	funcao inicio()
+	{
+		real numero[10] 
+		inteiro i
+		para(i=0;i<10;i++){
+			escreva("digite 10 numeros reais: ")
+			leia(numero[i])
+		}
+		para(i=9;i>-1;i--){
+			escreva("\n",numero[i])	
+		}
+	}
+}
