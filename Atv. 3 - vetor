@@ -4,8 +4,8 @@ programa
 // nesse intervalo). Ao final, mostre quantas vezes cada número apareceu.
 	funcao inicio()
 	{
-		real numeros[15], comparar[15] , somas[15]
-		inteiro i, comparar1=0, comparar2=15
+		inteiro numeros[15], contar[15]
+		inteiro i, j, x = 0
 		para(i=0;i<15;i++){
 
 			faca{
@@ -15,9 +15,17 @@ programa
 					escreva("\nNúmero Incorreto! ")
 				}
 			}enquanto(numeros[i]<1 ou numeros[i]>10)
-			comparar1++
-			comparar2--
+			
+			para(j=0;j<15;j++){
+				se(numeros[i] == numeros[j]){
+					x++		
+					contar[i] = x
+				}			
+			}
+			x = 0
 		}
-
+		para(i=0;i<15;i++){
+			escreva("\no número ", numeros[i], " repetiu ", contar[i], " vezes.")	
+		}
 	}
 }
