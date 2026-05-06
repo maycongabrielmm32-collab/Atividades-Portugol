@@ -1,0 +1,21 @@
+programa
+{
+//Leia dois arrays com 5 números inteiros cada. Após essas leituras, imprima todos
+//os números que estão no array 1 e também no array 2.
+
+	funcao inicio()
+	{
+		inteiro numeros[5], numeros2[5], i
+		para(i=0; i<5; i++){
+			escreva("digite um numero inteiro ")
+			leia(numeros[i])
+			escreva("digite outro numero inteiro ")
+			leia(numeros2[i])	
+		}
+		para(i=0; i<5; i++){
+			escreva("\n",numeros[i])
+			escreva("\n",numeros2[i])
+		}
+		
+	}
+}
