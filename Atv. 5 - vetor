@@ -1,0 +1,63 @@
+programa
+{
+	
+	funcao inicio()
+	{
+/*5. Faça um programa que trabalhe com um vetor de tamanho 15. O programa deve fornecer o seguinte menu:
+
+a) Cadastrar valor: pede um índice e um valor para o usuário, insere o valor digitado no índice informado.
+
+b) Somar a um valor: pede um índice e um valor para o usuário, após isso, faz uma soma do valor informado com o valor que existia no índice anteriormente.
+
+c) Multiplicar a um valor: pede um índice e um valor para o usuário, após isso, faz uma multiplicação do valor informado com o valor que existia no índice anteriormente.
+
+d) Incrementar a todos os valores: percorre todas as posições do vetor e incrementa os valores em 1.
+
+e) Listar todos os valores: imprime na tela todos os valores que existem no vetor.*/
+
+		inteiro valor[15] , i, y, valorunico = 0
+
+		para(i=0; i<15; i++){
+			escreva("qual indice você quer colocar o valor? (de 1 a 15) ")
+			leia(y)
+			enquanto(y<1 ou y>15){
+				escreva("numero incorreto, digite o indice de 1 a 15")
+				leia(y)
+			}
+			y--
+			escreva("agora o valor que voce quer neste indice")
+			leia(valorunico)
+			valor[y] = valorunico
+		}
+		para(i=0; i<15; i++){
+			escreva("qual indice você quer colocar o valor? (de 1 a 15) ")
+			leia(y)
+			enquanto(y<1 ou y>15){
+				escreva("numero incorreto, digite o indice de 1 a 15")
+				leia(y)
+			}
+			y--
+			escreva("agora o valor que voce quer somar com o anterior neste indice")
+			leia(valorunico)
+			valor[y] = valor[y] + valorunico
+		}
+		para(i=0; i<15; i++){
+			escreva("qual indice você quer colocar o valor? (de 1 a 15) ")
+			leia(y)
+			enquanto(y<1 ou y>15){
+				escreva("numero incorreto, digite o indice de 1 a 15")
+				leia(y)
+			}
+			y--
+			escreva("agora o valor que voce quer multiplicar com o anterior neste indice")
+			leia(valorunico)
+			valor[y] = valor[y] * valorunico
+		}
+		para(i=0; i<15; i++){
+			valor[i]++
+		}
+		para(i=0; i<15; i++){
+			escreva("\n",valor[i])
+		}
+	}
+}
