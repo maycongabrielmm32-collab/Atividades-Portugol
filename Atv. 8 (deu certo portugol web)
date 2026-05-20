@@ -1,0 +1,44 @@
+programa
+{
+//Crie um programa que gera uma matriz identidade de tamanho N.
+
+	funcao matriz(inteiro m[][], inteiro l2, inteiro c2){
+		inteiro l, c
+		se(l2!=c2){
+			escreva("sua matriz não tem uma matriz identidade")
+		}
+		senao{
+			para(l=0 ; l<l2 ; l++){
+				
+				para(c=0; c<c2; c++){
+				
+					se(l==c){
+						m[l][c] = 1
+				
+					}senao{
+						m[l][c] = 0
+					}
+          escreva(" ",m[l][c], " ")		
+				}
+
+        escreva("\n")
+
+			}
+		}
+	}
+	
+	funcao inicio()
+	{
+
+		inteiro l2,c2
+		escreva("digite o numero de linhas")
+		leia(l2)
+		escreva("digite o numero de colunas")
+		leia(c2)
+
+		inteiro m[l2][c2]
+		
+		matriz(m, l2, c2)
+		
+	}
+}
